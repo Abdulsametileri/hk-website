@@ -1,6 +1,6 @@
-baseURL       = "http://example.org/"
-languageCode  = "en-us"
-title         = "Roxo | Creative Design Agency"
+baseURL       = "https://abdulsametileri.github.io/hk-website/"
+languageCode  = "tr"
+title         = "Ulus Etiket Matbaacılık ve Ambalaj - Antalya - Isparta - Burdur -Alanya"
 theme         = "roxo-hugo"
 summarylength = 25
 
