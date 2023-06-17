@@ -1,39 +1,35 @@
 {{ define "main" }}
 
-<section class="site-project-single-section">
+<section class="site-project-single-section" style="padding: 100px 0 100px">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <div class="site-project-single">
-          <h1>
-            {{ .Title }}
-          </h1>
-          <div class="site-project-single-description">
-            {{ .Content }}
-          </div>
-          <div class="site-project-single-image">
-            {{ range .Params.project_images }}
-            <img src="{{ . | absURL }}" alt="project image">
-            {{ end }}
-          </div>
-          {{ if .NextInSection }}
-          <div class="site-project-single-action">
-            <a href="{{.NextInSection.Permalink}}">
-              <span class="link-area">
-                <span data-text="Next Project">
-                  Next Project
-                </span>
-              </span>
-              <img src="{{ "images/to-top.svg" | absURL }}" alt="next project">
-            </a>
-          </div>
-          {{ end }}
+      <div class="col-12">
+        <div class="site-project-single" style="margin-bottom: 30px;">
+          <h2>{{ .Params.title }}</h2>
         </div>
+      </div>
+
+      {{ range .Params.projects }}
+
+      {{ $slice := split . "|" }}
+      {{ $text := index $slice 0 }}
+      {{ $url := index $slice 1 }}
+      <div class="col-lg-6 col-md-10 mx-auto">
+        <div class="site-project-item" style="padding: 10px;">
+          <div class="site-project-item-thumb">
+            <img src="{{ $url | absURL }}" alt="{{ $text }}">
+          </div>
+          <div>
+            <h4 style="margin-top: 10px;">{{ $text }}</h4>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      <div class="col-12 text-center text-lg-left">
+        <a href="{{ "urunler" | absURL }}" class="site-project-cta">Tüm Ürünleri Gör</a>
       </div>
     </div>
   </div>
 </section>
-
-{{ partial "call-to-action.html" . }}
 
 {{ end }}
