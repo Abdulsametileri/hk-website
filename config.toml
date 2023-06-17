@@ -1,6 +1,6 @@
 baseURL       = "https://abdulsametileri.github.io/hk-website/"
 languageCode  = "tr"
-title         = "Ulus Etiket Matbaacılık ve Ambalaj - Antalya - Isparta - Burdur -Alanya"
+title         = "Ulus Etiket Matbaacılık ve Ambalaj - Antalya - Isparta - Burdur - Alanya"
 theme         = "roxo-hugo"
 summarylength = 25
 
@@ -57,21 +57,21 @@ summarylength = 25
   # Banner Section
   [params.banner]
     enable                = true
-    background_image      = "images/backgrounds/hero-background.jpg"
-    heading               = "We’re a Design Studio That Belies In the Great Ideas"
-    tagline               = "WE WORK HARD, WE PLAY HARD"
-    primary_button        = "See Our Works"
-    primary_button_url    = "portfolio"
-    secondary_button      = "Connect with Us"
-    secondary_button_url  = "contact"
+    background_image      = "images/backgrounds/cta-background.jpg"
+    heading               = "Ulus Etiket Matbaacılık ve Ambalaj"
+    tagline               = ""
+    primary_button        = "Ürünlerimiz"
+    primary_button_url    = "kurumsal"
+    secondary_button      = "İletişim"
+    secondary_button_url  = "iletisim"
 
   [params.portfolio]
     enable    = true
-    title     = "OUR RECENT WORKS"
-    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
+    title     = "Ürünler"
+    subtitle  = ""
 
   [params.call_to_action]
-    enable              = true
+    enable              = false
     background_image    = "images/backgrounds/cta-background.jpg"
     title               = "LET’S WORK TOGETHER"
     primary_button      = "Submit Query"
